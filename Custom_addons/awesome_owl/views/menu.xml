@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="Counter_app_menu"
+        name="Counter App"
+        sequence="10"
+    />
+
+    <menuitem
+        id="Counter_app_submenu"
+        name="Counter App"
+        parent="Counter_app_menu"
+        action="counter_app"
+        sequence="10"
+    />
+
+</odoo>
