@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<template xml:space="preserve">
+    <div t-name="awesome_owl.CounterApp">
+        <h1>Counter</h1>
+        <p>The current count is: <span t-esc="state.count"/></p>
+        <button t-on-click="increment">Increment</button>
+    </div>
+</template>

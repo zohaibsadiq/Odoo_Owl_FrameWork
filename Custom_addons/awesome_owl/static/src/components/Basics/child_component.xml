@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<template xml:space="preserve">
+    <div t-name="awesome_owl.child_component">
+        <h1>Child Component</h1>
+        <p>Original Value: <t t-esc="props.value"/></p>
+        <p>Double Value: <t t-esc="get_double_value()"/></p>
+    </div>
+</template>

@@ -1,6 +1,7 @@
 {
     "name" : "Awesome Dashboard",
     "version" : "1.0",
+    "license" : "LGPL-3",
     "depends" : ["web"],
     "data" : [
         "views/counter.xml",
@@ -8,8 +9,8 @@
     ],
     "assets" : {
         "web.assets_backend": [
-            "awesome_owl/static/src/components/*.js",
-            "awesome_owl/static/src/components/*.xml"
+            "awesome_owl/static/src/components/*/*.js",
+            "awesome_owl/static/src/components/*/*.xml"
         ]
     },
     "installable" : True,

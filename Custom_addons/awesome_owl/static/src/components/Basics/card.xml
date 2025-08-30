@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<template xml:space="preserve">
+    <!-- <div t-name="awesome_owl.card" class="card d-inline-block m-2" style="width: 18rem;">
+         <div class="card-body">
+            <button class="btn btn-primary" t-on-click="handle_Click">Click Me</button>
+            <h5 class="card-title" >
+                <t t-esc="props.title"/>
+            </h5>
+            <p class="card-text">
+                <t t-out="props.markUpValue"/>
+            </p>
+        </div>
+    </div> -->
+    <div t-name="awesome_owl.card" class="card d-inline-block m-2" style="width: 18rem;">
+         <div class="card-body">
+            <button class="btn btn-primary" t-on-click="toggleContent"><t t-esc="state.showContent ? 'Hide' : 'Show'" /></button>
+            <h5 class="card-title" >
+                Parent card
+            </h5>
+            <!-- <p class="card-text">
+                <t t-esc="props.stateValue"/>
+            </p> -->
+
+            <t t-if="state.showContent">
+                <div class="card">
+                    Child card:
+                    <t t-slot="default" />
+                </div>
+            </t>
+        </div>
+    </div>
+</template>

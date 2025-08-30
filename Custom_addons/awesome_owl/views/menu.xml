@@ -14,5 +14,20 @@
         action="counter_app"
         sequence="10"
     />
+    <menuitem
+        id="SumOfCounters"
+        name="Sum Of Counters"
+        parent="Counter_app_submenu"
+        action="SumOfCounters_action"
+        sequence="10"
+    />
+
+    <menuitem
+        id="TodoList"
+        name="Todo List"
+        parent="Counter_app_menu"
+        action="TodoList_action"
+        sequence="10"
+    />
 
 </odoo>

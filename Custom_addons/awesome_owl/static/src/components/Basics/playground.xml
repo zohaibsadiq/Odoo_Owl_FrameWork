@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates xml:space="preserve">
+   <t t-name="awesome_owl.Counter">
+      <p>Counter: <t t-esc="state.value"/></p>
+      <button class="btn btn-primary" t-on-click="increment">Increment</button>
+      <p>The Sum of Counters are: <t t-esc="incrementSum()"/></p>
+      <!-- Child Componenet -->
+      <ChildComponent value="state.value"/>
+      <!-- Child Card Component  -->
+      <!-- <Card title="'My Card Title'" content="'This is the content of the card.'"
+      onClick="increment" markUpValue="this.html" />  -->
+      <!-- <Card title="'Zohaib'" content="'Hello Zohaib'" onClick="() => increment()"
+      markUpValue="this.html" /> -->
+      <!-- <Card  onClick="() => increment()" stateValue = "state.value" />
+      <Card  onClick="() => increment()" stateValue = "state.value" /> -->
+
+      <!-- Card with slots  -->
+      <Card>
+            <h3>Passing Card in Card</h3>
+            <p>This is content inside the card component using slots.</p>
+      </Card>
+   </t>
+</templates>

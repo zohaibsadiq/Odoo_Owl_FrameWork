@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<template xml:space="preserve">
+    <div t-name="awesome_owl.SumOfCounters">
+        <CounterApp onChange="() => updateCounter1()"/>
+        <CounterApp onChange="() => updateCounter2()"/>
+        <h1>Sum Of Counters</h1>
+        <p>The sum of all counters is: <span t-esc="state.sum"/></p>
+    </div>
+</template>

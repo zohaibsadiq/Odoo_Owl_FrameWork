@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<template xml:space="preserve">
+    <div t-name="awesome_owl.TodoList">
+        <h1 class="mx-auto w-50 text-center">Todo List</h1>
+        <input type="text" t-model="state.newTodo" class="form-control w-50 mx-auto mb-3"
+            placeholder="Add a new todo" t-ref="Active_Input"  />
+        <button class="btn btn-primary mb-3"  t-on-click="addTodo">Add Todo</button>
+        <TodoItem todo="state.todos" toggleTodo="toggleTodo" removeTodo="removeTodo" />
+    </div>
+</template>
