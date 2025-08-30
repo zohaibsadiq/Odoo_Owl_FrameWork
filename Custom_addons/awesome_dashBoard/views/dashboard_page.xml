@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="Awesome_dashboard_App" model="ir.actions.client">
+        <field name="name">Dashboard</field>
+        <field name="tag">awesome_dashBoard.Dashboard_Action</field>
+    </record>
+
+</odoo>

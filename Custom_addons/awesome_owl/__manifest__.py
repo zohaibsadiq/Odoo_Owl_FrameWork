@@ -1,5 +1,5 @@
 {
-    "name" : "Awesome Dashboard",
+    "name" : "Awesome Counter App",
     "version" : "1.0",
     "license" : "LGPL-3",
     "depends" : ["web"],

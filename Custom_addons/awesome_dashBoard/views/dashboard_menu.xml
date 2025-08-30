@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="Awesome_dashboard_menu"
+        name="Awesome Dashboard"
+        sequence="10"/>
+
+
+        <menuitem
+            id="Awesome_dashboard_submenu"
+            name="Dashboard"
+            parent="Awesome_dashboard_menu"
+            action="Awesome_dashboard_App"
+            sequence="10"/>
+</odoo>

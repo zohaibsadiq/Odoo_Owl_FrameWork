@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+    <div t-name="awesome_dashBoard.Dashboard">
+        <Layout className="'o_dashboard h-100'" display="{controlPanel: {}}">
+            <h1>hello world</h1>
+         <!-- Show current state -->
+            <t t-if="state.name">
+                <p>Hello, <t t-esc="state.name" />!</p>
+            </t>
+            <t t-else="">
+                <p>No name set yet.</p>
+            </t>
+
+            <!-- Buttons -->
+            <button type="button" t-on-click="setName">Set Name</button>
+            <button type="button" t-on-click="clearName">Clear Name</button>
+        </Layout>
+    </div>
+</templates>
